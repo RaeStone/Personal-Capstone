@@ -1,0 +1,26 @@
+.container {
+    width: 70vw;
+    margin: 20px;
+    padding: 10px;
+}
+.tab {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-content:center;
+
+    margin: 20px;
+    padding: 10px;
+    text-align: left;
+}
+
+.card {
+    text-align: center;
+}
+
+.title {
+    padding: 15px;
+}
+.topAction {
+    padding: 15px;
+}
