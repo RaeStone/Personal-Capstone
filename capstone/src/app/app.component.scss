@@ -1,6 +1,12 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
 .header{
     display: flex;
     flex-direction: row;
+    background-color: plum;
+    height: 70px;
 }
 .title{
     padding: 10px;
@@ -12,4 +18,9 @@
     width: 15vw;
     font-size: 1.3em;
     padding-top: 24px;
+}
+.footer {
+    background-color: plum;
+    height: 40px;
+    margin-top: auto;
 }

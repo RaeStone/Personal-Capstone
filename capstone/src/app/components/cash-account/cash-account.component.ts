@@ -71,12 +71,14 @@ export class CashAccountComponent implements OnInit {
       if (this.selected == "Withdrawal"){
         let balance = this.account.balance - this.amount;
         this.cashService.updateAccount(999, balance).subscribe(reponse => {
+          this.showForm();
           this.ngOnInit();
         });
       }
       else if (this.selected == "Deposit"){
         let balance : number = Number(this.account.balance) + Number(this.amount);
         this.cashService.updateAccount(999, balance).subscribe(response => {
+          this.showForm();
           this.ngOnInit();
         });
       }

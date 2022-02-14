@@ -12,25 +12,27 @@
         <mat-card-content class="topAction">
             <button mat-raised-button (click)="showDetails()">{{detailButton}}</button>
             <button mat-raised-button (click)="showForm()">Transfer</button>
-            <div *ngIf="displayDetails">
-                <p>Account Number: {{account.accountNumber}}</p>
-                <p>Routing Number: {{account.routingNumber}}</p>
-            </div>
-            <div *ngIf="displayForm">
-                <form>
-                    <mat-form-field appearance="outline">
-                        <mat-label>Type</mat-label>
-                        <mat-select [(value)]="selected" required>
-                            <mat-option value="Deposit">Deposit</mat-option>
-                            <mat-option value="Withdrawal">Withdrawal</mat-option>
-                        </mat-select>
-                    </mat-form-field>
-                    <mat-form-field appearance="outline">
-                        <mat-label>Amount</mat-label>
-                        <input matInput placeholder="0" required [(ngModel)]="amount" name="amount">
-                    </mat-form-field>
-                    <button mat-stroked-button (click)="transfer()">Submit</button>
-                </form>
+            <div class="hidden">
+                <div *ngIf="displayDetails">
+                    <p>Account Number: {{account.accountNumber}}</p>
+                    <p>Routing Number: {{account.routingNumber}}</p>
+                </div>
+                <div *ngIf="displayForm">
+                    <form>
+                        <mat-form-field appearance="outline">
+                            <mat-label>Type</mat-label>
+                            <mat-select [(value)]="selected" required>
+                                <mat-option value="Deposit">Deposit</mat-option>
+                                <mat-option value="Withdrawal">Withdrawal</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <mat-form-field appearance="outline">
+                            <mat-label>Amount</mat-label>
+                            <input matInput placeholder="0" required [(ngModel)]="amount" name="amount">
+                        </mat-form-field>
+                        <button mat-stroked-button (click)="transfer()">Submit</button>
+                    </form>
+                </div>
             </div>
         </mat-card-content>
         <mat-card-title>

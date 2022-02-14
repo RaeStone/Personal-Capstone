@@ -1,5 +1,5 @@
 <div class="container">
-    <mat-card *ngIf="accountExists">
+    <div *ngIf="accountExists">
         <mat-card class="topcard">
             <mat-card-title class="title">
                 IRA
@@ -12,7 +12,7 @@
             Investments
         </mat-card-title>
         <mat-card-content class="ira">
-            <table mat-table [dataSource]="investments" class="mat-elevation-z8">
+            <table mat-table [dataSource]="investments" class="mat-elevation-z8">   q
 
                 <ng-container matColumnDef="name">
                     <th mat-header-cell *matHeaderCellDef> Stock </th>
@@ -90,7 +90,7 @@
                 <tr mat-row *matRowDef="let row; columns: displayedColumnsp;"></tr>
             </table>
         </mat-card-content>
-    </mat-card>
+    </div>
     <mat-card *ngIf="!accountExists" class="noAccount">
         <mat-card-title class="noAccountTitle">
             No IRA associated with this account

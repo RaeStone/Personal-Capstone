@@ -1,15 +1,17 @@
 .container {
-    width: 70vw;
+    width: 95vw;
     margin: 20px;
     padding: 10px;
 }
 .tab {
+    width: 70vw;
     display: flex;
     flex-direction:column;
     justify-content: center;
     align-content:center;
 
     margin: 20px;
+    margin-left: 10vw;
     padding: 10px;
     text-align: left;
 }
@@ -23,4 +25,7 @@
 }
 .topAction {
     padding: 15px;
+}
+.hidden {
+    margin-top: 20px;
 }

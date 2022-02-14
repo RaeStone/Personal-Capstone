@@ -1,5 +1,5 @@
 .container {
-    width: 65vw;
+    width: 95vw;
     margin: 20px;
     padding: 10px;
 }
@@ -12,12 +12,14 @@
 }
 
 .ira {
+    width: 65vw;
     display: flex;
     flex-direction:column;
     justify-content: center;
     align-content:center;
 
     margin: 20px;
+    margin-left: 15vw;
     padding: 10px;
 }
 
@@ -30,12 +32,14 @@
 }
 
 .topcard {
+    width: 50vw;
     display: flex;
     flex-direction:column;
     justify-content: center;
     align-content:center;
 
     margin: 20px;
+    margin-left: 22vw;
     padding: 10px;
     text-align: center;
 }
