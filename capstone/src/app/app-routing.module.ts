@@ -4,7 +4,7 @@ import { CashAccountComponent } from './components/cash-account/cash-account.com
 import { IraComponent } from './components/ira/ira.component';
 
 const routes: Routes = [
-  { path: "checking", component: CashAccountComponent},
+  { path: "", component: CashAccountComponent},
   { path: "ira", component: IraComponent}
 ];
 

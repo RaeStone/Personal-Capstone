@@ -5,22 +5,42 @@
 .header{
     display: flex;
     flex-direction: row;
-    background-color: plum;
+    justify-content: space-evenly;
+    background-color: rgb(241, 119, 89);
     height: 70px;
 }
 .title{
     padding: 10px;
     padding-top: 20px;
     font-size: xx-large;
-    width: 60vw;
+    width: 75vw;
+    font-family: 'Noto Serif Display', serif;
+    font-weight: 700;
 }
 .headerlink{
-    width: 15vw;
-    font-size: 1.3em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8vw;
+    font-size: 1.5em;
     padding-top: 24px;
+    font-family: 'Noto Serif Display', serif;
+    font-weight: 700;
 }
 .footer {
-    background-color: plum;
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 15px;
+    background-color: rgb(241, 119, 89);
+    font-size: 1.5em;
     height: 40px;
     margin-top: auto;
+    font-family: 'Noto Serif Display', serif;
+    //font-weight: 500;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(39, 47, 97);
 }
